@@ -1,24 +1,36 @@
 <header class="header1">
   <!-- Header desktop -->
   <div class="container-menu-header">
+    <%if signed_in?%>
+      <div class="topbar">
 
+        <div class="topbar-child2">
+            <span class="topbar-email">
+              <%= current_user.email %>
+            </span>
+        </div>
+      </div>
+    <%end %>
     <div class="wrap_header">
       <!-- Logo -->
       <%= link_to root_path, class: "logo" do %>
-        <h1>CLOTHING & CO.</h1>
+        <h2>CLOTHING & CO.</h2>
       <%end %>
 
       <!-- Menu -->
       <div class="wrap_menu">
         <nav class="menu">
           <ul class="main_menu">
+            <% categories = Category.all %>
             <li>
               <a href="index.html">Categorías</a>
+              <% unless categories.nil? %>
               <ul class="sub_menu">
-                <li><a href="index.html">Homepage V1</a></li>
-                <li><a href="home-02.html">Homepage V2</a></li>
-                <li><a href="home-03.html">Homepage V3</a></li>
+                <% categories.each do |c|%>
+                  <li><a href="<%=category_path(c.id) %>"><%= c.name %></a></li>
+                <% end %>
               </ul>
+              <% end %>
             </li>
 
             <li>
@@ -50,14 +62,13 @@
 
       <!-- Header Icon -->
       <div class="header-icons">
-        <a href="#" class="header-wrapicon1 dis-block">
+        <a href="<%= edit_user_registration_path %>" class="header-wrapicon1 dis-block">
           <%if signed_in?%>
-            <img src="<%= asset_path 'icons/icon-header-01.png'%>" class="header-icon1" alt="ICON">
-            <%=link_to current_user.email, edit_user_registration_path, class: "header-icon1 modify-link"%><span class="linedivide1"></span>
-            <%=link_to "Logout", destroy_user_session_path, method: :delete, class: "header-icon1 modify-link"%>
+            <img src="<%= asset_path 'icons/icon-header-01.png'%>" class="header-icon1" style="padding-right: 10px;" alt="ICON">
+            <%=link_to "Salir", destroy_user_session_path, method: :delete, class: "modify-link"%>
           <%else%>
             <%=link_to I18n.t("categories.register"), new_user_registration_path, class: "header-icon1 modify-link"%> <span class="linedivide1"></span>
-            <%=link_to "Login", new_user_session_path, class: "header-icon1 modify-link"%>
+            <%=link_to "Ingresar", new_user_session_path, class: "header-icon1 modify-link"%>
           <%end%>
 
         </a>
@@ -148,22 +159,19 @@
   <!-- Header Mobile -->
   <div class="wrap_header_mobile">
     <!-- Logo moblie -->
-    <a href="index.html" class="logo-mobile">
-      <img src="<%= asset_path 'icons/logo.png'%>" alt="IMG-LOGO">
-    </a>
+    <%= link_to root_path, class: "logo-mobile" do %>
+      <h2>CLOTHING & CO.</h2>
+    <%end %>
 
     <!-- Button show menu -->
     <div class="btn-show-menu">
       <!-- Header Icon mobile -->
       <div class="header-icons-mobile">
-        <a href="#" class="header-wrapicon1 dis-block">
-          <img src="<%= asset_path 'icons/icon-header-01.png'%>" class="header-icon1" alt="ICON">
-        </a>
 
         <span class="linedivide2"></span>
 
         <div class="header-wrapicon2">
-          <img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+          <img src="<%= asset_path 'icons/icon-header-02.png'%>" class="header-icon1 js-show-header-dropdown" alt="ICON">
           <span class="header-icons-noti">0</span>
 
           <!-- Header cart noti -->
@@ -253,24 +261,19 @@
   <div class="wrap-side-menu" >
     <nav class="side-menu">
       <ul class="main-menu">
-        <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-						<span class="topbar-child1">
-							Free shipping for standard order over $100
-						</span>
-        </li>
 
         <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
           <div class="topbar-child2-mobile">
 							<span class="topbar-email">
-								fashe@example.com
+                <%if signed_in?%>
+                  <img src="<%= asset_path 'icons/icon-header-01.png'%>" class="header-icon1" alt="ICON">
+                  <%=link_to current_user.email, edit_user_registration_path, class: "modify-link"%> <br>
+                  <%=link_to "Salir", destroy_user_session_path, method: :delete, class: " modify-link"%>
+                <%else%>
+                  <%=link_to I18n.t("categories.register"), new_user_registration_path, class: "header-icon1 modify-link"%> <span class="linedivide1"></span>
+                  <%=link_to "Ingresar", new_user_session_path, class: "header-icon1 modify-link"%>
+                <%end%>
 							</span>
-
-            <div class="topbar-language rs1-select2">
-              <select class="selection-1" name="time">
-                <option>USD</option>
-                <option>EUR</option>
-              </select>
-            </div>
           </div>
         </li>
 
@@ -285,11 +288,11 @@
         </li>
 
         <li class="item-menu-mobile">
-          <a href="index.html">Home</a>
+          <a href="#">Categorias</a>
           <ul class="sub-menu">
-            <li><a href="index.html">Homepage V1</a></li>
-            <li><a href="home-02.html">Homepage V2</a></li>
-            <li><a href="home-03.html">Homepage V3</a></li>
+            <% categories.each do |c|%>
+              <li><a href="<%=category_path(c.id) %>"><%= c.name %></a></li>
+            <% end %>
           </ul>
           <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
         </li>

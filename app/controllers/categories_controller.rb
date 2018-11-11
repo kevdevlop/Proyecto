@@ -1,5 +1,12 @@
 class CategoriesController < ApplicationController
-  def index
-    render 'index'
+  def show
+    @category = Category.find(params[:id])
+    @categories = Category.all
+    @products = ProductCategory.where(category_id: @category.id)
+  end
+
+
+  def get_categories_by
+
   end
 end

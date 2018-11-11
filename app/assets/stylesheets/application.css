@@ -10,8 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
 
- *= require main
- *= require util
+
  *= require vendor/bootstrap/css/bootstrap.min
  *= require vendor/animate/animate
  *= require vendor/css-hamburgers/hamburgers.min
@@ -25,6 +24,8 @@
  *= require fonts/Linearicons-Free-v1.0.0/icon-font.min
  *= require fonts/elegant-font/html-css/style
  *= require categories
+ *= require main
+ *= require util
  *= require_self
 
  */
@@ -48,6 +49,14 @@ a.logo{
     color: #bcaaa4;
 }
 a.logo:hover {
+    text-decoration: none;
+    color: #3e2723;
+}
+
+a.logo-mobile{
+    color: #bcaaa4;
+}
+a.logo-mobile:hover {
     text-decoration: none;
     color: #3e2723;
 }
