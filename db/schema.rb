@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2018_11_11_015726) do
     t.integer "quantity", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "sale_id"
+    t.bigint "sale_id" 
     t.index ["sale_id"], name: "index_sale_items_on_sale_id"
   end
 
