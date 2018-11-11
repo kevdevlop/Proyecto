@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -12,6 +13,20 @@
 
   <body>
     <%= render partial: "layouts/site_navbar" %>
+    <%if notice %>
+      <div class="alert alert-info" style="margin-left: 15%; margin-right: 15%;"><%= notice %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <%end %>
+    <%if alert %>
+      <div class="alert alert-danger"  style="margin-left: 15%; margin-right: 15%;"><%= alert %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <%end %>
     <%= yield %>
     <%= render partial: "layouts/footer" %>
     <%= javascript_include_tag "application" %>

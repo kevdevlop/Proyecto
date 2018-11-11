@@ -24,6 +24,30 @@
  *= require fonts/themify/themify-icons
  *= require fonts/Linearicons-Free-v1.0.0/icon-font.min
  *= require fonts/elegant-font/html-css/style
+ *= require categories
  *= require_self
 
  */
+
+
+.sign-up{
+    margin-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.btn-signup{
+    margin-bottom: 10px;
+}
+
+.btn-signup input:hover{
+    background-color: #28a745 !important;
+    color: white;
+}
+a.logo{
+    color: #bcaaa4;
+}
+a.logo:hover {
+    text-decoration: none;
+    color: #3e2723;
+}

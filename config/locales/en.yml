@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  categories:
+    register: "Registrarse"
+    buy_now: "Comprar ahora"
+    new_arrivals: "Nuevos"
