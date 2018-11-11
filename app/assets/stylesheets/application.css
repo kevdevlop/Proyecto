@@ -9,7 +9,21 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
+
+ *= require main
+ *= require util
+ *= require vendor/bootstrap/css/bootstrap.min
+ *= require vendor/animate/animate
+ *= require vendor/css-hamburgers/hamburgers.min
+ *= require vendor/animsition/css/animsition.min
+ *= require vendor/select2/select2.min
+ *= require vendor/daterangepicker/daterangepicker
+ *= require vendor/slick/slick
+ *= require vendor/lightbox2/css/lightbox.min
+ *= require fonts/font-awesome-4.7.0/css/font-awesome.min
+ *= require fonts/themify/themify-icons
+ *= require fonts/Linearicons-Free-v1.0.0/icon-font.min
+ *= require fonts/elegant-font/html-css/style
  *= require_self
+
  */
