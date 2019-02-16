@@ -10,7 +10,17 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
-//= require activestorage
-//= require turbolinks
-//= require_tree .
+// require_tree .
+//= require jquery
+//= require vendor/animsition/js/animsition
+//= require vendor/bootstrap/js/popper
+//= require vendor/bootstrap/js/bootstrap.min
+//= require vendor/select2/select2.min
+//= require vendor/slick/slick.min
+//= require slick-custom
+//= require vendor/countdowntime/countdowntime
+//= require vendor/lightbox2/js/lightbox.min
+//= require vendor/sweetalert/sweetalert.min
+//= require vendor/noui/nouislider.min
+//= require select_2
+//= require main

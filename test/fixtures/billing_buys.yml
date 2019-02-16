@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sale: one
+  client: one
+  method_pay: 1
+
+two:
+  sale: two
+  client: two
+  method_pay: 1

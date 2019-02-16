@@ -9,7 +9,61 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
+
+
+ *= require vendor/bootstrap/css/bootstrap.min
+ *= require vendor/animate/animate
+ *= require vendor/css-hamburgers/hamburgers.min
+ *= require vendor/animsition/css/animsition.min
+ *= require vendor/select2/select2.min
+ *= require vendor/daterangepicker/daterangepicker
+ *= require vendor/slick/slick
+ *= require vendor/noui/nouislider.min
+ *= require vendor/lightbox2/css/lightbox.min
+ *= require fonts/font-awesome-4.7.0/css/font-awesome.min
+ *= require fonts/themify/themify-icons
+ *= require fonts/Linearicons-Free-v1.0.0/icon-font.min
+ *= require fonts/elegant-font/html-css/style
+ *= require categories
+ *= require main
+ *= require util
  *= require_self
+
  */
+
+
+.sign-up{
+    margin-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.btn-signup{
+    margin-bottom: 10px;
+}
+
+.btn-signup input:hover{
+    background-color: #28a745 !important;
+    color: white;
+}
+a.logo{
+    color: #bcaaa4;
+}
+a.logo:hover {
+    text-decoration: none;
+    color: #3e2723;
+}
+
+a.logo-mobile{
+    color: #bcaaa4;
+}
+a.logo-mobile:hover {
+    text-decoration: none;
+    color: #3e2723;
+}
+
+
+.paginate_f{
+    margin-top: 13px;
+    margin-left: 10px;
+}
