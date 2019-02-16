@@ -21,5 +21,6 @@
 //= require vendor/countdowntime/countdowntime
 //= require vendor/lightbox2/js/lightbox.min
 //= require vendor/sweetalert/sweetalert.min
+//= require vendor/noui/nouislider.min
 //= require select_2
 //= require main

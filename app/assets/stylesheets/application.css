@@ -18,6 +18,7 @@
  *= require vendor/select2/select2.min
  *= require vendor/daterangepicker/daterangepicker
  *= require vendor/slick/slick
+ *= require vendor/noui/nouislider.min
  *= require vendor/lightbox2/css/lightbox.min
  *= require fonts/font-awesome-4.7.0/css/font-awesome.min
  *= require fonts/themify/themify-icons
@@ -59,4 +60,10 @@ a.logo-mobile{
 a.logo-mobile:hover {
     text-decoration: none;
     color: #3e2723;
+}
+
+
+.paginate_f{
+    margin-top: 13px;
+    margin-left: 10px;
 }

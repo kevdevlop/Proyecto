@@ -4,6 +4,18 @@ class Product < ApplicationRecord
   validates :name, :price, :size, :gender, presence: true
   after_create :create_product_category
 
+  def check_reduced
+    if self.off_sale && (self.percent_discount)
+      percent = self.percent_discount/100.to_d
+      p "---------#{percent}------"
+      if percent > 0.0
+        reduced_price = self.price - (percent * self.price)
+        p "---------#{self.reduced_price}------"
+        self.update!(reduced_price: reduced_price)
+      end
+    end
+  end
+
   private
   def create_product_category
     category = case self.gender
@@ -17,4 +29,5 @@ class Product < ApplicationRecord
       p "------- error al crear producto_categoria --------"
     end
   end
+
 end
