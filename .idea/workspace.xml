@@ -20,7 +20,7 @@
     <session id="1338051569">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.6" value="5" />
@@ -70,7 +70,7 @@
           <entry key="erb" value="2418" />
           <entry key="js" value="428" />
           <entry key="rake" value="1" />
-          <entry key="rb" value="2912" />
+          <entry key="rb" value="2913" />
           <entry key="scss" value="16" />
           <entry key="yml" value="341" />
         </counts>
@@ -80,7 +80,7 @@
           <entry key="CSS" value="334" />
           <entry key="JavaScript" value="428" />
           <entry key="RHTML" value="2418" />
-          <entry key="Ruby" value="2944" />
+          <entry key="Ruby" value="2945" />
           <entry key="SCSS" value="16" />
           <entry key="YAML" value="341" />
         </counts>
@@ -107,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
-              <caret line="85" column="40" lean-forward="true" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+              <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -115,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="18" />
+            <state relative-caret-position="270">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -488,12 +488,12 @@
       <workItem from="1542733180728" duration="640000" />
       <workItem from="1543555293979" duration="519000" />
       <workItem from="1547612475650" duration="920000" />
-      <workItem from="1550334996192" duration="1143000" />
+      <workItem from="1550334996192" duration="1463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57819000" />
+    <option name="totallyTimeSpent" value="58139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -850,7 +850,7 @@
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
-          <caret line="85" column="40" lean-forward="true" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -863,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="18" />
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
