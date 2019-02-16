@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-=begin
 categories = Category.create([
     {name: "Mujeres" },
     {name: "Hombres"},
@@ -17,7 +16,6 @@ if categories
 else
   p "------ No se crearon las categorias"
 end
-=end
 
 products = Product.create!([
     {name: "Denim Jacket Blue", price: 499.99, descrption: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,",
